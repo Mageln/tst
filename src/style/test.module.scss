@@ -1,0 +1,58 @@
+@import './variables.module.scss';
+
+
+.test__container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+@media (min-width: 700px) {
+  .test__container {
+    flex-direction: row;
+    gap: 3em;
+  }
+}
+@media (min-width: 1280px) {
+  .test__container {
+    gap: 5em;
+  }
+}
+
+.test__text__wrapper {
+  
+  font-size: 30px;
+  padding: 1em;
+  border-radius: 7px;
+
+}
+@media (min-width: 700px) {
+  .test__text__wrapper {
+    width: 100%;
+    min-height: 100%;
+    padding: 2em;
+    display: grid;
+    place-items: center;
+  }
+}
+
+.test__loading__text {
+  align-self: start;
+}
+
+.current__char,
+.wrong__char {
+  color: $primary-light;
+}
+
+.current__char {
+  background-color: $right-color;
+}
+
+.wrong__char {
+  background-color: $wrong-color;
+}
+
+.right__char {
+  color: $right-color;
+}

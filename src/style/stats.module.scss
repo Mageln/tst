@@ -1,0 +1,40 @@
+@import './variables.module.scss';
+
+
+.stats__container {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-wrap: wrap;
+  gap: 2em;
+  text-align: center;
+  background-color: #323437;
+  padding: 1em;
+  border-radius: 7px;
+  box-shadow: 0 0 10px 5px $decor-color-rgb, .25;
+}
+
+.uppercase__text{
+ text-transform: uppercase;
+ padding-bottom: 10px;
+
+ &:last-child{
+  padding-bottom: 0;
+ }
+}
+
+
+
+@media (min-width: 700px) {
+  .stats__container {
+    padding: 2em;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+.stat__title {
+  margin-bottom: 1em;
+}

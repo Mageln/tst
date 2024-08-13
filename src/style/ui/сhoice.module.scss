@@ -1,0 +1,9 @@
+@import "../variables.module.scss";
+
+.select {
+  display: block;
+  margin: 1rem auto;
+  padding: .25em 1em;
+  border: 2px solid $primary-dark;
+  color: inherit;
+}
